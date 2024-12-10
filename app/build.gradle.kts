@@ -4,7 +4,7 @@ plugins {
 
 android {
     namespace = "com.majhigram.majhigrampanchayat"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.majhigram.majhigrampanchayat"
@@ -37,7 +37,20 @@ dependencies {
     implementation(libs.material)
     implementation(libs.activity)
     implementation(libs.constraintlayout)
+    implementation(libs.play.services.location)
+    implementation(libs.tools.core)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
+    implementation("androidx.webkit:webkit:1.9.0")
+    implementation("com.google.android.gms:play-services-ads:22.6.0")
+    implementation("androidx.multidex:multidex:2.0.1")
+    implementation("com.github.GrenderG:Toasty:1.5.2")
+    implementation("com.android.volley:volley:1.2.1")
+    implementation("androidx.swiperefreshlayout:swiperefreshlayout:1.1.0")
+    implementation("com.github.ksoichiro:android-observablescrollview:1.0.0")
+    implementation("com.airbnb.android:lottie:5.2.0")
+    implementation("androidx.viewpager2:viewpager2:1.0.0")
+    implementation("androidx.core:core:1.9.0")
+    implementation("androidx.recyclerview:recyclerview:1.2.1")
 }
